@@ -2,30 +2,39 @@
 // 2023
 
 import 'package:flutter/material.dart';
+import 'foodsocial_theme.dart';
 
 void main() {
-  // 1
   runApp(const FoodSocial());
 }
 
 class FoodSocial extends StatelessWidget {
-  // 2
   const FoodSocial({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // TODO: Create theme
+    // [Done] TODO: Create theme
+    final theme = FoodSocialTheme.dark();
     // TODO: Apply Home Widget
-    // 3
     return MaterialApp(
-      // TODO: Add theme.
+      // [Done] TODO: Add theme.
+      theme: theme,
       title: 'Food Social',
-      // 4
       home: Scaffold(
-        // TODO: Style the title.
-        appBar: AppBar(title: const Text('Food Social')),
-        // TODO: Style the body text.
-        body: const Center(child: Text("Let's get cooking 👩‍🍳"))
+        // [Done] TODO: Style the title.
+        appBar: AppBar(
+          title: Text(
+            'Food Social',
+            style: theme.textTheme.headline6,
+          ),
+        ),
+        // [Done] TODO: Style the body text.
+        body: Center(
+          child: Text(
+            "Let's get cooking 👩‍🍳",
+            style: theme.textTheme.headline1,
+          ),
+        ),
       ),
     );
   }
