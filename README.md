@@ -1,4 +1,4 @@
-# foodsocial_app
+# Food Social App
 
 Creating a Social Recipe App
 
