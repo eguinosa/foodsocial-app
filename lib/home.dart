@@ -2,6 +2,7 @@
 // 2023
 
 import 'package:flutter/material.dart';
+import 'card1.dart';
 
 
 class Home extends StatefulWidget {
@@ -16,8 +17,8 @@ class HomeState extends State<Home> {
   // Add state variables and functions.
   int _selectedIndex = 0;
   static List<Widget> pages = <Widget>[
-    // TODO: Replece with Card1.
-    Container(color: Colors.red),
+    // Replace with Card1.
+    const Card1(),
     // TODO: Replace with Card2.
     Container(color: Colors.green),
     // TODO: Replace with Card3.
